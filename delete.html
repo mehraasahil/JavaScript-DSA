@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="remove"   placeholder="enter position">
+    <button onclick="removeEl()">Remove ELement</button>
+</body>
+<script>
+    // function removeEl(){
+    //     let data = [1,2,3,4,5]
+    //     let position = document.getElementById('remove').value;
+    //      position = parseInt(position)
+    //     for(i=position;i<data.length-1;i++){
+    //         data [i] = data[i+1]    // it is not adding the value the replacing the current value with next
+           
+            
+    //     }
+    //     data.length=data.length-1
+    //         console.log(data)
+
+    // }
+
+
+
+    function removeEl(){
+
+       let data = [1,2,3,4,5,6]
+       let position = document.getElementById('remove').value
+       position = parseInt(position)
+       for (i= position;i<data.length;i++){
+        data[i] = data[i+1]
+       }
+       data.length=data.length-1
+       console.log(data)
+    }
+
+    // Easy Method
+// function removeEl(){
+
+
+//     let arr = [1,2,3,4,5,7]
+//     let numTo=  document.getElementById('remove').value;;
+//     for (let i = 0; i<arr.length;i++){
+//         if(arr[i]== numTo){
+//             arr.splice(i,1)
+//             console.log(arr)
+//         }
+//     }
+// }
+</script>
+</html>
