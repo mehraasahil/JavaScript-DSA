@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search</h1>
+
+    <input type="text" id="enter">
+    <button onclick="find()">Search Indexvalue</button>
+    
+</body>
+<script>
+    function find(){
+    let data1=[1,2,3,4,5,6]
+    let position=document.getElementById('enter').value
+    let index = []
+
+    for(let i =0;i<data1.length;i++){
+        if(data1[i]==position){
+         index=i
+         break   
+        }
+       
+        
+    }
+   
+        console.log(index)
+    
+   
+}
+
+</script>
+</html>
